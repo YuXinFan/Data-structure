@@ -92,3 +92,72 @@ Print the content of the hash table in the JSON format to the standard output.
     On the last line, print ]
 
 Your program must have the same input/output behavior as my reference program.
+
+## Sample Input 
+
+    75 9
+    
+    
+    1 2 a g h jjd jkd ll iei a dk kdjfy i ieio oeo op eo po po p op o po o h
+    djfkldfjkd jkfkfljdkf wengeglat 			
+    ************************
+    
+    
+    eo g
+    
+    ************************
+  
+
+## Sample Output 
+
+
+```
+[
+{},
+{"po":3,"1":1},
+{"kdjfy":1,"2":1},
+{"djfkldfjkd":1},
+{},
+{},
+{"dk":1},
+{},
+{"ieio":1},
+{},
+{},
+{},
+{},
+{},
+{"oeo":1},
+{"jkfkfljdkf":1},
+{"jkd":1},
+{},
+{},
+{"wengeglat":1,"op":2,"a":2},
+{},
+{},
+{},
+{},
+{},
+{},
+{"h":2},
+{"ll":1,"i":1},
+{},
+{"iei":1},
+{},
+{},
+{},
+{"o":2,"jjd":1},
+{"p":1},
+{},
+{},
+{},
+{}
+]
+``` 
+
+## Hint 
+
+    To store values of different types in the same linked list, consider inheritance in C++.
+    To avoid integer overflow when calculating hash codes, apply the following properties, where a, b, m are integers:
+        (a + b) % m == a % m + b % m
+        (a * b) % m == ((a % m) * b) % m
